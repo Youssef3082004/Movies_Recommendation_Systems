@@ -63,6 +63,14 @@ This system provides personalized recommendations based on the genres of movies 
 * **User Profiling:** Recommends the top 10 movies most relevant to a specific user's high-rated history.
 * **Data Visualization:** Includes visual insights into a user's most-watched categories using `seaborn` and `matplotlib`.
 
+### 3. Collaborative-Based Recommender
+This system leverages the wisdom of the crowd. It recommends movies by analyzing patterns in user ratings to find similarities between users or items. If User A and User B liked similar movies in the past, the system assumes they will like similar movies in the future.
+
+**Key Features:**
+* **User-Item Matrix:** Constructs a Pivot Table transforming the dataset into a matrix where rows represent users and columns represent movies.
+* **Memory Management:** Implements data sampling strategies to handle large sparse matrices efficiently on standard hardware.
+* **Cosine Similarity:** Calculates similarity scores between rating vectors to identify correlated movie preferences.
+
 ## 🛠️ Tech Stack
 
 * **Language:** Python
