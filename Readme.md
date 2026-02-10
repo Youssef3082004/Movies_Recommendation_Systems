@@ -83,10 +83,12 @@ This system leverages the wisdom of the crowd. It recommends movies by analyzing
 
 ```bash
 ├── Datasets/
-│   ├── movies.csv          # Movie IDs, titles, and genres
-│   └── ratings.csv         # User IDs, movie IDs, and ratings
-├── Content_based.ipynb      # Content-based filtering implementation
-└── Popularity_based.ipynb   # Weighted popularity scoring implementation
+│   ├── movies.csv            # Movie IDs, titles, and genres
+│   ├── CleanedMovies.csv     # Movies Dataset after splitting Year from title
+│   └── ratings.csv           # User IDs, movie IDs, and ratings
+├── Content_based.ipynb       # Content-based filtering implementation
+├── Collabritive_based.ipynb  # Collaborative filtering implementation (User-Item Matrix)
+└── Popularity_based.ipynb    # Weighted popularity scoring implementation
 
 ```
 
