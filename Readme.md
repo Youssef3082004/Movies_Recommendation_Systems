@@ -71,7 +71,7 @@ This system leverages the wisdom of the crowd. It recommends movies by analyzing
 * **Memory Management:** Implements data sampling strategies to handle large sparse matrices efficiently on standard hardware.
 * **Cosine Similarity:** Calculates similarity scores between rating vectors to identify correlated movie preferences.
 
-### KNN Based Collaborative Filtering
+### 4. KNN Based Collaborative Filtering
 This model provides recommendations by identifying users with similar taste profiles rather than finding similarities between items.
 
 **Key Features:**
