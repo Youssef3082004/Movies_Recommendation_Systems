@@ -71,13 +71,12 @@ This system leverages the wisdom of the crowd. It recommends movies by analyzing
 * **Memory Management:** Implements data sampling strategies to handle large sparse matrices efficiently on standard hardware.
 * **Cosine Similarity:** Calculates similarity scores between rating vectors to identify correlated movie preferences.
 
-## 🛠️ Tech Stack
+### KNN Based Collaborative Filtering
+This model provides recommendations by identifying users with similar taste profiles rather than finding similarities between items.
 
-* **Language:** Python
-* **Data Manipulation:** `pandas`, `numpy`
-* **Machine Learning:** `scikit-learn` (TF-IDF, Cosine Similarity)
-* **Visualization:** `matplotlib`, `seaborn`
-* **Regex:** `re` (for data cleaning and feature extraction)
+**Key Features:**
+* **Pivot Table Structure**: Unlike the item-based model, the data is pivoted with **User IDs as rows** and **Movie Titles as columns**.
+* **Neighbor Identification**: The model calculates the **Cosine Similarity** between the target user's rating vector and all other users in the system.
 
 ## 📁 Repository Structure
 
@@ -88,6 +87,7 @@ This system leverages the wisdom of the crowd. It recommends movies by analyzing
 │   └── ratings.csv           # User IDs, movie IDs, and ratings
 ├── Content_based.ipynb       # Content-based filtering implementation
 ├── Collabritive_based.ipynb  # Collaborative filtering implementation (User-Item Matrix)
+├── KNN_Collabritive.ipynb    # Collaborative filtering implementation using KNN Algorithm
 └── Popularity_based.ipynb    # Weighted popularity scoring implementation
 
 ```
